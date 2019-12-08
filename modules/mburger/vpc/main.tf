@@ -1,0 +1,18 @@
+provider "aws" {
+  version = "~> 2.0"
+  region  = var.region
+}
+
+terraform {
+  backend "s3" {}
+}
+
+resource "aws_vpc" "main" {
+  cidr_block = var.cidr
+  enable_dns_support = true
+  enable_dns_hostnames = true
+
+  tags = {
+    Name = var.name
+  }
+}
