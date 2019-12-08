@@ -1,14 +1,14 @@
 variable "cidr" {
     description = "CIDR Definition for VPC"
-    type = "string"
+    type = string
 }
 
 variable "region" {
     description = "AWS Region"
-    type = "srting"
+    type = string
 }
 
 variable "name" {
     description = "VPC Name"
-    type = "string"
+    type = string
 }
