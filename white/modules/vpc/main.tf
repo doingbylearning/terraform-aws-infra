@@ -12,3 +12,7 @@ resource "aws_vpc" "example" {
     Name = var.name
   }
 }
+
+terraform {
+  backend "s3" {}
+}
