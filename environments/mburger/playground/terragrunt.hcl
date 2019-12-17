@@ -19,3 +19,8 @@ remote_state {
   }
 }
 
+inputs = {
+  name                   = "mburger-playground"
+  region                 = "eu-central-1"
+  availability_zones     = ["eu-central-1a", "eu-central-1b"]
+}
