@@ -10,11 +10,12 @@ terraform {
 remote_state {
   backend = "s3"
   config = {
-    bucket = "white-playground-eu-central-1"
+    bucket = "mburger-playground-eu-central-1"
     key     = format("%s/terraform.tfstate", path_relative_to_include())
     region  = "eu-central-1"
     encrypt = true
-    dynamodb_table = "white-playground-eu-central-1"
+
+    dynamodb_table = "mburger-playground-eu-central-1"
   }
 }
 
